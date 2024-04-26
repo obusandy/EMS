@@ -17,3 +17,5 @@ con.connect(function(err)
         console.log("connected")
     }
 })
+
+export default con;
