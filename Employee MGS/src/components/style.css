@@ -10,3 +10,17 @@
     background-color: rgba(1, 32, 93, 0.6);
     color: white !important;
 }
+/* styling for dashboard */
+/* style.css */
+.dashboard-logo:hover {
+    opacity: 0.8;
+  }
+  
+  .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .nav-link:hover i {
+    color: #fff;
+  }
+  
