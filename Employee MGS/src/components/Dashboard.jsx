@@ -24,7 +24,7 @@ const Dashboard = () => {
                     </Link>
                 </li>
                 <li className='w-100'>
-                  <Link to="/dashboard/employee" className='nav-link text-white px-0 align-middle'>
+                  <Link to="/dashboard/category" className='nav-link text-white px-0 align-middle'>
                   <i className='fs-4 bi-columns ms-2'></i>
                     <span className='ms-2 d-none d-sm-inline'>Category</span>
                     </Link>
@@ -36,7 +36,7 @@ const Dashboard = () => {
                     </Link>
                 </li>
                 <li className='w-100'>
-                  <Link to="/dashboard/logout" className='nav-link text-white px-0 align-middle'>
+                  <Link className='nav-link text-white px-0 align-middle'>
                   <i className='fs-4 bi-power ms-2'></i>
                     <span className='ms-2 d-none d-sm-inline'>Log-out</span>
                     </Link>
