@@ -40,9 +40,11 @@ const AddEmployee = () => {
     formData.append("image", employee.image);
     formData.append("category_id", employee.category_id);
 
+    console.log("Employee data before sending:", formData);
     axios
       .post("http://localhost:3000/auth/add_employee", formData)
       .then((result) => {
+        console.log("Server response:", formData);
         if (result.data.Status) {
           navigate("/dashboard/employee");
         } else {

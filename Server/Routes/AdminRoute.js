@@ -17,6 +17,7 @@ router.post("/adminlogin", (req, res) => {
         {
           role: "admin",
           email: email,
+          id: result[0].id,
         },
         "jwt_secret_key",
         { expiresIn: "1d" }
