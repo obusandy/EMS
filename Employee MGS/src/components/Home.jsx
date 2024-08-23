@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+/* eslint-disable react/jsx-key */
+import { useEffect, useState } from "react";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import axios from "axios";
 

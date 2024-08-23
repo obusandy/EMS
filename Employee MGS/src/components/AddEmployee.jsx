@@ -1,5 +1,6 @@
+/* eslint-disable react/jsx-key */
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const AddEmployee = () => {
@@ -60,7 +61,7 @@ const AddEmployee = () => {
         <h3 className="text-center">ADD EMPLOYEE</h3>
         <form className="row g-1" onSubmit={handleSubmit}>
           <div className="col-12">
-            <label for="inputEmail4" className="form-label">
+            <label htmlFor="inputEmail4" className="form-label">
               Name
             </label>
             <input
@@ -74,7 +75,7 @@ const AddEmployee = () => {
             />
           </div>
           <div className="col-12">
-            <label for="inputEmail4" className="form-label">
+            <label htmlFor="inputEmail4" className="form-label">
               Email
             </label>
             <input
@@ -88,7 +89,7 @@ const AddEmployee = () => {
             />
           </div>
           <div className="col-12">
-            <label for="inputPassword4" className="form-label">
+            <label htmlFor="inputPassword4" className="form-label">
               Password
             </label>
             <input
@@ -102,7 +103,7 @@ const AddEmployee = () => {
             />
           </div>
           <div className="col-12">
-            <label for="inputSalary" className="form-label">
+            <label htmlFor="inputSalary" className="form-label">
               Salary
             </label>
             <input
@@ -117,7 +118,7 @@ const AddEmployee = () => {
             />
           </div>
           <div className="col-12">
-            <label for="inputAddress" className="form-label">
+            <label htmlFor="inputAddress" className="form-label">
               Address
             </label>
             <input
@@ -132,7 +133,7 @@ const AddEmployee = () => {
             />
           </div>
           <div className="col-12">
-            <label for="category" className="form-label">
+            <label htmlFor="category" className="form-label">
               Category
             </label>
             <select
@@ -150,7 +151,7 @@ const AddEmployee = () => {
           </div>
 
           <div className="col-12 mb-3">
-            <label for="formFile" className="form-label">
+            <label htmlFor="formFile" className="form-label">
               Select Image
             </label>
             <input

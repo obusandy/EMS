@@ -1,5 +1,6 @@
+/* eslint-disable react/jsx-key */
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
 const EditEmployee = () => {
@@ -38,7 +39,7 @@ const EditEmployee = () => {
         });
       })
       .catch((err) => console.log(err));
-  }, []);
+  }, [employee, id]);
 
   const navigate = useNavigate();
   const handleSubmit = (e) => {
@@ -61,7 +62,7 @@ const EditEmployee = () => {
         <h3 className="text-center">EDIT EMPLOYEE</h3>
         <form className="row g-1" onSubmit={handleSubmit}>
           <div className="col-12">
-            <label for="inputEmail4" className="form-label">
+            <label htmlFor="inputEmail4" className="form-label">
               Name
             </label>
             <input
@@ -76,7 +77,7 @@ const EditEmployee = () => {
             />
           </div>
           <div className="col-12">
-            <label for="inputEmail4" className="form-label">
+            <label htmlFor="inputEmail4" className="form-label">
               Email
             </label>
             <input
@@ -92,7 +93,7 @@ const EditEmployee = () => {
           </div>
 
           <div className="col-12">
-            <label for="inputSalary" className="form-label">
+            <label htmlFor="inputSalary" className="form-label">
               Salary
             </label>
             <input
@@ -108,7 +109,7 @@ const EditEmployee = () => {
             />
           </div>
           <div className="col-12">
-            <label for="inputAddress" className="form-label">
+            <label htmlFor="inputAddress" className="form-label">
               Address
             </label>
             <input
@@ -124,7 +125,7 @@ const EditEmployee = () => {
             />
           </div>
           <div className="col-12">
-            <label for="category" className="form-label">
+            <label htmlFor="category" className="form-label">
               Category
             </label>
             <select

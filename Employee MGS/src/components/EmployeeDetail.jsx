@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
 const EmployeeDetail = () => {
@@ -13,7 +13,7 @@ const EmployeeDetail = () => {
         setEmployee(result.data[0]);
       })
       .catch((err) => console.log(err));
-  }, []);
+  }, [id]);
   const handleLogout = () => {
     axios.get("http://localhost:3000/employee/logout").then((result) => {
       if (result.data.Status) {
